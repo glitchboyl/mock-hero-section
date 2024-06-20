@@ -3,14 +3,7 @@ import Link from "next/link";
 import { GithubIcon, DiscordIcon, RedditIcon, TwitterIcon } from "./icons";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetHeader,
-  SheetTitle,
-  SheetDescription,
-} from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const navs = [
   "Smart Contracts",
@@ -36,24 +29,27 @@ const Navbar = () => {
         </nav>
         <ul className="hidden w-[128px] lg:flex justify-between items-center text-[20px]">
           <li>
-            <a href="#">
+            <Link
+              href="https://github.com/glitchboyl/mock-hero-section"
+              target="_blank"
+            >
               <GithubIcon />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="/">
               <DiscordIcon />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="/">
               <RedditIcon />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="/">
               <TwitterIcon />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -81,24 +77,27 @@ const Navbar = () => {
             <div className="mt-[32px]">
               <ul className="w-[128px] flex justify-between items-center text-[20px]">
                 <li>
-                  <a href="#">
+                  <Link
+                    href="https://github.com/glitchboyl/mock-hero-section"
+                    target="_blank"
+                  >
                     <GithubIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link href="/">
                     <DiscordIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link href="/">
                     <RedditIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link href="/">
                     <TwitterIcon />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
